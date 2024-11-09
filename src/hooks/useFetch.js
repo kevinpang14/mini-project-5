@@ -29,7 +29,7 @@ const useFetch = (endpoint, method = "GET", requestData = null) => {
         });
 
         //get the data from the api
-        const data = await resp.data;
+        const data = await resp.data.data;
         console.log("API Response:", resp);
         console.log("API Data", resp.data); //array of objects {id, title, description}
 
