@@ -24,7 +24,7 @@ const useFetch = (endpoint, method = "GET", requestData = null) => {
           data: requestData,
           headers: {
             "Content-Type": "application/json",
-            "x-api-key": API_KEY,
+            "api-key": API_KEY,
           },
         });
 
