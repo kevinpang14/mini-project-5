@@ -9,7 +9,9 @@ const StudentDetail = ({ toggleModal }) => {
     isLoading,
     apiData: student,
     serverError,
-  } = useFetch(`/students/${id}`, "GET");
+  } = useFetch(`/students/${id}`);
+
+  console.log("apiData", student);
 
   if (isLoading) return <p>Loading...</p>;
   // if (serverError) return <p>Error: {serverError.message}</p>;
